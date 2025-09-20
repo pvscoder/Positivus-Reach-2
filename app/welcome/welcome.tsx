@@ -1,7 +1,7 @@
 import logoDark from "./logo-dark.svg";
 import logoLight from "./logo-light.svg";
-import {Navberlink} from "~/components/home/navber and footer/nav"
-import {FooterLink} from "~/components/home/navber and footer/footer";
+import {Navberlink} from "~/components/home/navber_footer/nav"
+import {FooterLink} from "~/components/home/navber_footer/footer";
 import {TitleLink} from "~/components/home/titlelink/titlelink";
 import {TeamMember} from "~/components/home/teammember"
 import { ContactUs,Contact } from "~/components/home/contactus";
