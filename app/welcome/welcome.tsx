@@ -57,41 +57,6 @@ export function Welcome() {
           <div>
             <div className=" mt-17.5">
               <Swiper slidesPerView={5}>
-
-                <SwiperSlide>
-                  <div className="flex justify-center items-center">
-                    <img src="img/company_logo/amazon.svg" alt="1" className="grayscale hover:grayscale-0 transition-transform duration-300 hover:scale-110"/>
-                  </div>
-                </SwiperSlide>
-
-                <SwiperSlide>
-                  <div className="flex justify-center items-center">
-                    <img src="img/company_logo/hobspot.svg" alt="2" className="grayscale hover:grayscale-0 transition-transform duration-300 hover:scale-110"/>
-                  </div>
-                </SwiperSlide>
-
-                <SwiperSlide>
-                  <div className="flex justify-center items-center">
-                    <img src="img/company_logo/vector.svg" alt="3" className="grayscale hover:grayscale-0 transition-transform duration-300 hover:scale-110"/>
-                  </div>
-                </SwiperSlide>
-
-                <SwiperSlide>
-                  <div className="flex justify-center items-center">
-                    <img src="img/company_logo/zoom.svg" alt="4" className="grayscale hover:grayscale-0 transition-transform duration-300 hover:scale-110"/>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="flex justify-center items-center">
-                    <img src="img/company_logo/notion.svg" alt="5" className="grayscale hover:grayscale-0 transition-transform duration-300 hover:scale-110"/>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="flex justify-center items-center">
-                    <img src="img/company_logo/netflix.svg" alt="6" className="grayscale hover:grayscale-0 transition-transform duration-300 hover:scale-110"/>
-                  </div>
-                </SwiperSlide>
-
                   {[
                       { photo: "img/company_logo/amazon.svg", logoname: "amazon" },
                       { photo: "img/company_logo/hobspot.svg", logoname: "hobspot" },
@@ -100,7 +65,9 @@ export function Welcome() {
                       { photo: "img/company_logo/vector.svg", logoname: "vector" },
                       { photo: "img/company_logo/zoom.svg", logoname: "zoom" },
                   ].map((banner, index) => (
+                    <SwiperSlide>
                       <BannerLink key={index} photo={banner.photo} logoname={banner.logoname} />
+                    </SwiperSlide>
                   ))}
               </Swiper>
               
@@ -386,59 +353,7 @@ export function Welcome() {
             
           <div className="mt-15 md:20">
             <div className="bg-[#191A23] border rounded-[50px] gap-12.5 py-20 pt-5 md:pt-21 px-4 md:px-0">
-              <Swiper slidesPerView={1.4}>
-                <SwiperSlide>
-                  <div>
-                    <div className="m-3 md:block font-normal text-lg text-[#fff] border border-green rounded-4xl px-12 pt-12 pb-20">
-                      We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence.
-                    </div>
-                    <div className="pt-5 pl-10">
-                      <div className="font-normal text-lg text-green">John Smith</div>
-                      <div className="font-normal text-lg text-[#fff]">Marketing Director at XYZ Corp</div>
-                    </div>
-                  </div>
-                </SwiperSlide>
-
-                <SwiperSlide>
-                  <div>
-                    <div className="m-3 md:block font-normal text-lg text-[#fff] border border-green rounded-4xl px-12 pt-12 pb-20">
-                      We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence.
-                    </div>
-                    <div className="pt-5 pl-10">
-                      <div className="font-normal text-lg text-green">John Smith</div>
-                      <div className="font-normal text-lg text-[#fff]">Marketing Director at XYZ Corp</div>
-                    </div>
-                  </div>
-                </SwiperSlide>
-
-                <SwiperSlide>
-                  <div>
-                    <div className="m-3 md:block font-normal text-lg text-[#fff] border border-green rounded-4xl px-12 pt-12 pb-20">
-                      We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence.
-                    </div>
-                    <div className="pt-5 pl-10">
-                      <div className="font-normal text-lg text-green">John Smith</div>
-                      <div className="font-normal text-lg text-[#fff]">Marketing Director at XYZ Corp</div>
-                    </div>
-                  </div>
-                </SwiperSlide>
-                
-                <SwiperSlide>
-                  <div>
-                    <div className="m-3 md:block font-normal text-lg text-[#fff] border border-green rounded-4xl px-12 pt-12 pb-20">
-                      We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence.
-                    </div>
-                    <div className="pt-5 pl-10">
-                      <div className="font-normal text-lg text-green">John Smith</div>
-                      <div className="font-normal text-lg text-[#fff]">Marketing Director at XYZ Corp</div>
-                    </div>
-                  </div>
-                </SwiperSlide>
-              </Swiper>
-
-
-              <div className="testimonial-slider swiper" >
-                <div className="swiper-wrapper">
+              <Swiper slidesPerView={1.5}>
                   {[
                     { comment: "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence.", name: "John Smith", position: "Marketing Director at XYZ Corp" },
                     { comment: "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence.", name: "John Smith", position: "Marketing Director at XYZ Corp" },
@@ -447,9 +362,15 @@ export function Welcome() {
                     { comment: "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence.", name: "John Smith", position: "Marketing Director at XYZ Corp" },
                   ]
                   .map((testimonial, index) => (
-                    <Testimonials key={index} comment={testimonial.comment} name={testimonial.name} position={testimonial.position}/>
+                    <SwiperSlide>
+                      <Testimonials key={index} comment={testimonial.comment} name={testimonial.name} position={testimonial.position}/>
+                    </SwiperSlide>
                   ))
                   }
+
+              </Swiper>
+              <div className="testimonial-slider swiper" >
+                <div className="swiper-wrapper">
 
                     
                 </div>
